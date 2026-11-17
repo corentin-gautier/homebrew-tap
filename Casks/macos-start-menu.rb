@@ -21,7 +21,7 @@ cask "macos-start-menu" do
   # until "Open Anyway" is clicked in Privacy & Security.
   postflight_steps do
     run "/usr/bin/xattr",
-        args:           ["-dr", "com.apple.quarantine", "#{appdir}/Start Menu.app"],
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Start Menu.app"],
         writable_paths: ["Start Menu.app"],
         writable_base:  :appdir
   end
