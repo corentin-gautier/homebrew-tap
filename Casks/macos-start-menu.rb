@@ -17,15 +17,6 @@ cask "macos-start-menu" do
 
   app "Start Menu.app"
 
-  # The app isn't notarized: without this, macOS refuses the first launch
-  # until "Open Anyway" is clicked in Privacy & Security.
-  postflight_steps do
-    run "/usr/bin/xattr",
-        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Start Menu.app"],
-        writable_paths: ["Start Menu.app"],
-        writable_base:  :appdir
-  end
-
   uninstall quit:       "local.mac-start-menu",
             login_item: "Start Menu"
 
