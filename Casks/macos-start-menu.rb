@@ -1,6 +1,6 @@
 cask "macos-start-menu" do
-  version "1.9"
-  sha256 "e546e9448defa495d49a2f68c3b6c1e8a1e2d1831f26bb87271363a2190c95ab"
+  version "1.10"
+  sha256 "9df8d0dc5cfe270e8a9bf5f570edafc3354c5efbe0b53a1e492f9068e220ef94"
 
   url "https://github.com/corentin-gautier/macos-start-menu/releases/download/v#{version}/Start-Menu.zip"
   name "macOS Start Menu"
