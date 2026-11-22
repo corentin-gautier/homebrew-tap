@@ -1,9 +1,9 @@
 cask "backlog-hub" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.0"
-  sha256 arm:   "a8bea99b4efb71fff4c718a47146960c8eccefc43f2cb1f45068b6a77df4fe31",
-         intel: "c3fb35af6be5c2a3b82945d8c17c5d5167f417978fbc96d2d1dc3b444eeac3cf"
+  version "0.2.0"
+  sha256 arm:   "51194520dcb07e2ed7e393c4f37d8bebf125c209e1c04282c8e5bcd5a9d38091",
+         intel: "5cec9a93ee00c489ab7f279875f8b5d2346a29c76cfbc51cd4071425854fb809"
 
   url "https://github.com/corentin-gautier/backlog-hub/releases/download/v#{version}/Backlog-Hub-#{version}-#{arch}.dmg"
   name "Backlog Hub"
